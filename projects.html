@@ -9,66 +9,143 @@
 </head>
 <body>
 
-    <nav class="navbar">
-        <a href="index.html" class="logo" style="text-decoration: none;">Z.</a>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="#" class="active">Projects</a>
-            <a href="index.html#contact" class="btn-contact">Let's Talk</a>
+    <nav class="navbar" style="width: 100%;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; width: 100%; box-sizing: border-box;">
+            <a href="index.html" class="logo" style="text-decoration: none;">Z.</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="index.html#services">About</a>
+                <a href="index.html#resume">Resume</a>
+                <a href="index.html#contact" class="btn-contact">Let's Talk</a>
+            </div>
         </div>
     </nav>
 
-    <main class="hero" style="height: 40vh; margin-bottom: 0;">
-        <div class="hero-content" style="text-align: center; margin: 0 auto;">
-            <h1 style="font-size: 4rem; margin-bottom: 10px;">Archive</h1>
-            <p class="subtitle" style="margin: 0 auto;">A complete collection of my design, media, and technical engineering work.</p>
+    <section class="page-header fade-in" style="padding: 160px 0 60px 0; background: transparent;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <p style="color: #00d2ff; font-family: monospace; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">Archive</p>
+            <h1 style="font-size: 3rem; font-weight: 700; letter-spacing: -1px; margin-top: 0; margin-bottom: 20px; color: #ffffff;">All Projects</h1>
+            <p style="color: #888888; font-size: 1.1rem; line-height: 1.6; max-width: 600px; margin: 0;">
+                A comprehensive log of my technical works, ranging from Machine Learning pipelines to Data Analytics systems.
+            </p>
         </div>
-    </main>
-
-    <section class="projects-section" style="padding-top: 50px;">
-        
-        <div id="ml" class="project-category" style="margin-bottom: 80px;">
-            <div class="category-header">
-                <h3>End-to-End Machine Learning</h3>
-            </div>
-            
-            <div class="projects-grid" style="margin-top: 30px;">
-                
-                <a href="project-risk-profiler.html" style="text-decoration: none; color: inherit; display: block;" class="fade-in">
-                    <div class="project-card">                  
-                        <div class="project-image">
-                            <div class="img-placeholder" style="background: linear-gradient(135deg, #0f2027, #2c5364);">Risk Profiler API</div>
-                        </div>
-                        <div class="project-info">
-                            <h4>Automated Credit Risk & Explainable AI</h4>
-                            <p>An end-to-end Machine Learning pipeline for MSME credit risk profiling, deployed as a REST API microservice with FastAPI.</p>
-                            <div class="tags"><span>FastAPI</span><span>SHAP</span><span>Random Forest</span></div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="project-fraud-detection.html" style="text-decoration: none; color: inherit; display: block;" class="fade-in delay-1">
-                    <div class="project-card">                  
-                        <div class="project-image">
-                            <div class="img-placeholder" style="background: linear-gradient(135deg, #1e130c, #9a8478);">Fraud Pipeline</div>
-                        </div>
-                        <div class="project-info">
-                            <h4>Financial Fraud & Customer Segmentation</h4>
-                            <p>Supervised learning for fraud detection and unsupervised learning using K-Means and PCA for behavioral segmentation.</p>
-                            <div class="tags"><span>Scikit-Learn</span><span>PCA</span><span>Clustering</span></div>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-
     </section>
 
-    <footer class="footer-section" style="padding-top: 50px; text-align: center; padding-bottom: 50px; border-top: 1px solid #222;">
-        <p style="color: #555;">&copy; 2026 Zahran. All rights reserved.</p>
-        <div style="margin-top: 20px;">
-            <a href="index.html" style="color: #00d2ff; text-decoration: none; font-weight: 500; transition: color 0.3s ease;">&larr; Back to Home</a>
+    <section id="all-projects" class="archive-section" style="width: 100%; padding-bottom: 120px; position: relative;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            
+            <div class="projects-text-list" style="border-top: 1px solid #1a1a1a;">
+                
+                <div class="project-text-item fade-in" style="border-bottom: 1px solid #1a1a1a; padding: 50px 0; transition: all 0.3s ease;">
+                    <a href="project-risk-profiler.html" style="text-decoration: none; display: grid; grid-template-columns: 1fr 3fr; gap: 40px; align-items: start;">
+                        
+                        <div class="project-meta-left">
+                            <span class="project-num" style="font-family: monospace; color: #555; font-size: 0.85rem; display: block; margin-bottom: 15px; letter-spacing: 1px;">2026 / ML ENGINEERING</span>
+                            <div class="tags">
+                                <span>FastAPI</span>
+                                <span>SHAP</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content-right">
+                            <h3 class="project-title-text" style="font-size: 1.8rem; font-weight: 600; color: #ffffff; margin-bottom: 12px; transition: color 0.3s ease; line-height: 1.3; margin-top: 0;">
+                                Automated Credit Risk Assessment & Explainable AI <span class="arrow" style="display: inline-block; transition: transform 0.3s ease; margin-left: 5px;">&rarr;</span>
+                            </h3>
+                            <p style="color: #888888; font-size: 1rem; line-height: 1.6; max-width: 800px; margin-top: 0;">
+                                An end-to-end Machine Learning pipeline designed to automate credit risk profiling for MSMEs. Built using a data leakage-free RandomForestClassifier, integrated with the SHAP framework for natural language risk explanations, and deployed as a REST API microservice.
+                            </p>
+                        </div>
+                        
+                    </a>
+                </div>
+
+                <div class="project-text-item fade-in delay-1" style="border-bottom: 1px solid #1a1a1a; padding: 50px 0; transition: all 0.3s ease;">
+                    <a href="project-fraud-detection.html" style="text-decoration: none; display: grid; grid-template-columns: 1fr 3fr; gap: 40px; align-items: start;">
+                        
+                        <div class="project-meta-left">
+                            <span class="project-num" style="font-family: monospace; color: #555; font-size: 0.85rem; display: block; margin-bottom: 15px; letter-spacing: 1px;">2026 / DATA SCIENCE</span>
+                            <div class="tags">
+                                <span>Random Forest</span>
+                                <span>PCA</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content-right">
+                            <h3 class="project-title-text" style="font-size: 1.8rem; font-weight: 600; color: #ffffff; margin-bottom: 12px; transition: color 0.3s ease; line-height: 1.3; margin-top: 0;">
+                                Financial Fraud Pipeline & Customer Segmentation <span class="arrow" style="display: inline-block; transition: transform 0.3s ease; margin-left: 5px;">&rarr;</span>
+                            </h3>
+                            <p style="color: #888888; font-size: 1rem; line-height: 1.6; max-width: 800px; margin-top: 0;">
+                                An end-to-end ML pipeline mitigating financial risk through supervised fraud detection and unsupervised behavioral segmentation. Utilized Decision Tree classifiers and K-Means Clustering to identify transaction anomalies.
+                            </p>
+                        </div>
+                        
+                    </a>
+                </div>
+
+                <div class="project-text-item fade-in delay-2" style="border-bottom: 1px solid #1a1a1a; padding: 50px 0; opacity: 0.4; cursor: default;">
+                    <div style="display: grid; grid-template-columns: 1fr 3fr; gap: 40px; align-items: start;">
+                        
+                        <div class="project-meta-left">
+                            <span class="project-num" style="font-family: monospace; color: #555; font-size: 0.85rem; display: block; margin-bottom: 15px; letter-spacing: 1px;">WIP / ANALYTICS</span>
+                            <div class="tags">
+                                <span style="border-color: #333; color: #666;">Python</span>
+                                <span style="border-color: #333; color: #666;">Excel</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content-right">
+                            <h3 style="font-size: 1.8rem; font-weight: 600; color: #aaaaaa; margin-bottom: 12px; line-height: 1.3; margin-top: 0;">
+                                Business Insights & Quantitative Analytics
+                            </h3>
+                            <p style="color: #555555; font-size: 1rem; line-height: 1.6; max-width: 800px; margin-top: 0;">
+                                Currently engineering a comprehensive analytics workflow focusing on financial operational metrics, business simulation logic, and interactive data wrangling pipelines using Python and Excel.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer-section" style="width: 100%;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div class="footer-content fade-in">
+                <div class="footer-left">
+                    <span class="footer-label">Send a Message</span>
+                    <h2>Let's build something great together.</h2>
+                    <form class="contact-form-minimal">
+                        <div class="input-group">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email*" required>
+                        </div>
+                        <textarea placeholder="Tell me about your project...*" rows="3" required></textarea>
+                        <button type="submit" class="btn-submit-minimal">Send Request <i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+
+                <div class="footer-right delay-1">
+                    <div class="footer-info-block">
+                        <span class="footer-label">Direct Contact</span>
+                        <a href="mailto:hello@zahran.com" class="footer-email-large">hello@zahran.com</a>
+                        <div class="social-links-minimal">
+                            <a href="https://www.linkedin.com/in/zahran-fardiaz/" target="_blank">LinkedIn</a>
+                            <a href="https://github.com/zahranmsf21" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-info-block nav-block">
+                        <span class="footer-label">Explore</span>
+                        <div class="footer-nav-minimal">
+                            <a href="index.html">Home</a>
+                            <a href="projects.html">Work</a>
+                            <a href="index.html#services">About</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
