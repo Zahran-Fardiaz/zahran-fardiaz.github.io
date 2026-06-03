@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahran | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar" style="width: 100%;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; width: 100%; box-sizing: border-box;">
+            <div class="logo">ZF.</div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">About</a>
+                <a href="#contact" class="btn-contact">Let's Talk</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="hero" style="height: 100vh; display: flex; align-items: center; position: relative;">
+        <div class="hero-content" style="max-width: 1200px; margin: 0 auto; padding: 0 20px; width: 100%;">
+            <p class="greeting">Hi there, I'm</p>
+            <h1>Zahran Fardiaz</h1>
+            <p class="academic-status" style="color: #ffffff; font-size: 1.1rem; font-weight: 500; margin-bottom: 10px; letter-spacing: 0.5px;">
+                Electrical Engineering Student at Universitas Padjadjaran
+            </p>
+            <p class="subtitle" style="margin-top: 0; margin-bottom: 25px;">Machine Learning | Data Analytics | Systems Engineering.</p>
+            
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/zahran-fardiaz/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/zahranmsf21" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <section id="projects" class="projects-section" style="width: 100%; padding: 120px 0; background: transparent; position: relative; clear: both;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            
+            <div class="section-header fade-in" style="margin-bottom: 60px; text-align: left;">
+                <p class="section-subtitle" style="color: #00d2ff; font-family: monospace; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Selected Archives</p>
+                <h2 style="font-size: 2.3rem; font-weight: 700; letter-spacing: -1px; margin-top: 0;">Featured Works</h2>
+            </div>
+
+            <div class="projects-text-list">
+                
+                <div class="project-text-item fade-in" style="border-bottom: 1px solid #1a1a1a; padding: 45px 0; transition: all 0.3s ease;">
+                    <a href="project-risk-profiler.html" style="text-decoration: none; display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: start;">
+                        
+                        <div class="project-meta-left">
+                            <span class="project-num" style="font-family: monospace; color: #444; font-size: 0.85rem; display: block; margin-bottom: 15px; letter-spacing: 1px;">01 / MACHINE LEARNING</span>
+                            <div class="tags">
+                                <span>FastAPI</span>
+                                <span>SHAP</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content-right">
+                            <h3 class="project-title-text" style="font-size: 1.7rem; font-weight: 600; color: #ffffff; margin-bottom: 12px; transition: color 0.3s ease; line-height: 1.3;">
+                                Automated Credit Risk Assessment & Explainable AI <span class="arrow" style="display: inline-block; transition: transform 0.3s ease; margin-left: 5px;">&rarr;</span>
+                            </h3>
+                            <p style="color: #888888; font-size: 0.95rem; line-height: 1.6; max-width: 700px; margin-top: 0;">
+                                An end-to-end Machine Learning pipeline designed to automate credit risk profiling for MSMEs. Built using a data leakage-free RandomForestClassifier, integrated with the SHAP framework for natural language risk explanations, and deployed as a REST API microservice.
+                            </p>
+                        </div>
+                        
+                    </a>
+                </div>
+
+                <div class="project-text-item fade-in delay-1" style="border-bottom: 1px solid #1a1a1a; padding: 45px 0; opacity: 0.35; cursor: default;">
+                    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: start;">
+                        
+                        <div class="project-meta-left">
+                            <span class="project-num" style="font-family: monospace; color: #444; font-size: 0.85rem; display: block; margin-bottom: 15px; letter-spacing: 1px;">02 / DATA ANALYTICS</span>
+                            <div class="tags">
+                                <span style="border-color: #222; color: #444;">IN PROGRESS</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content-right">
+                            <h3 style="font-size: 1.7rem; font-weight: 600; color: #aaaaaa; margin-bottom: 12px; line-height: 1.3; margin-top: 0;">
+                                Business Insights & Quantitative Analytics
+                            </h3>
+                            <p style="color: #555555; font-size: 0.95rem; line-height: 1.6; max-width: 700px; margin-top: 0;">
+                                Currently engineering a comprehensive analytics workflow focusing on financial operational metrics, business simulation logic, and interactive data wrangling pipelines using Python and Excel.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="view-all-container fade-in" style="margin-top: 50px; text-align: right;">
+                <a href="projects.html" style="color: #ffffff; text-decoration: none; font-size: 0.9rem; font-weight: 500; font-family: monospace; letter-spacing: 1px; border-bottom: 1px solid #00d2ff; padding-bottom: 5px; transition: color 0.3s ease;">
+                    VIEW FULL ARCHIVE &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services-section" style="width: 100%; padding: 80px 0;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div class="section-header fade-in" style="margin-bottom: 50px;">
+                <h2>What I Do</h2>
+                <p>Bridging the gap between complex data logic and intelligent system integrations.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Machine Learning Models</h3>
+                    <p>Developing predictive models and algorithms. Focused on training data, optimizing model accuracy, and deploying intelligent solutions for real-world problems.</p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Scikit-Learn</span>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in delay-1">
+                    <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Data Analytics</h3>
+                    <p>Extracting actionable insights from raw datasets. Utilizing Python and Excel to process information, build business simulations, and create comprehensive data visualizations.</p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Excel</span>
+                        <span>Data Viz</span>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in delay-2">
+                    <div class="card-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Hardware-AI Integration</h3>
+                    <p>Applying electrical engineering principles to integrate intelligent algorithms with IoT devices and hardware systems for automated control and logic design.</p>
+                    <div class="tags">
+                        <span>IoT</span>
+                        <span>Systems Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section id="resume" class="resume-section" style="width: 100%; padding: 100px 0; background: #080808; border-top: 1px solid #111; border-bottom: 1px solid #111;">
+        <div class="container fade-in" style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 40px;">
+            
+            <div class="resume-left" style="flex: 1; min-width: 300px;">
+                <p style="color: #00d2ff; font-family: monospace; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; margin-top: 0;">Experience & Education</p>
+                <h2 style="font-size: 2.3rem; font-weight: 700; letter-spacing: -1px; margin-top: 0; margin-bottom: 15px;">Resume</h2>
+                <p style="color: #888888; font-size: 0.95rem; line-height: 1.6; max-width: 550px; margin: 0;">
+                    A comprehensive overview of my academic background in Electrical Engineering, technical stack, and hands-on experience in Machine Learning and Data Systems.
+                </p>
+            </div>
+
+            <div class="resume-right">
+                <a href="assets/Resume_Zahran_June_2026.pdf" target="_blank" rel="noopener noreferrer" class="btn-resume" style="display: inline-flex; align-items: center; padding: 14px 28px; background-color: transparent; color: #00d2ff; border: 1px solid rgba(0, 210, 255, 0.5); border-radius: 4px; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; text-decoration: none; transition: all 0.3s ease;">
+                    <i class="fas fa-file-pdf" style="margin-right: 10px; font-size: 1.1rem;"></i> View Resume
+                </a>
+            </div>
+
+        </div>
+    </section>
+    
+    <footer id="contact" class="footer-section" style="width: 100%;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div class="footer-content fade-in">
+                <div class="footer-left">
+                    <span class="footer-label">Send a Message</span>
+                    <h2>Let's build something great together.</h2>
+                    <form class="contact-form-minimal">
+                        <div class="input-group">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email*" required>
+                        </div>
+                        <textarea placeholder="Tell me about your project...*" rows="3" required></textarea>
+                        <button type="submit" class="btn-submit-minimal">Send Request <i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+
+                <div class="footer-right delay-1">
+                    <div class="footer-info-block">
+                        <span class="footer-label">Direct Contact</span>
+                        <a href="mailto:zahran24001@mail.unpad.ac.id" class="footer-email-large">zahran24001@mail.unpad.ac.id</a>
+                        <div class="social-links-minimal">
+                            <a href="https://www.linkedin.com/in/zahran-fardiaz/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/zahranmsf21" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-info-block nav-block">
+                        <span class="footer-label">Explore</span>
+                        <div class="footer-nav-minimal">
+                            <a href="#">Home</a>
+                            <a href="#projects">Work</a>
+                            <a href="#services">About</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

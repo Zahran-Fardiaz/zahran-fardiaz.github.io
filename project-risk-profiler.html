@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahran | Risk Profiler AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="text-decoration: none;">Z.</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="index.html#contact" class="btn-contact">Let's Talk</a>
+        </div>
+    </nav>
+
+    <header class="project-hero fade-in" style="padding: 160px 20px 80px; text-align: center; max-width: 900px; margin: 0 auto;">
+        <div class="project-hero-content">
+            <div class="tags" style="margin-bottom: 25px; justify-content: center;">
+                <span>FastAPI</span>
+                <span>SHAP</span>
+                <span>Random Forest</span>
+            </div>
+            
+            <h1 style="font-size: 3.2rem; font-weight: 700; letter-spacing: -1px; margin-bottom: 25px; color: #ffffff;">
+                Risk Profiler for MSMEs
+            </h1>
+            
+            <p class="subtitle" style="font-size: 1.15rem; color: #aaaaaa; line-height: 1.7; margin: 0 auto; max-width: 750px;">
+                Automated credit risk assessment pipeline featuring SHAP-driven explainability and a production-ready REST API.
+            </p>
+        </div>
+    </header>
+
+    <section class="project-meta-section fade-in">
+        <div class="meta-grid">
+            <div class="meta-item">
+                <span class="meta-label">Context</span>
+                <span class="meta-value">Top 800 - PIDI Digdaya x Hackathon 2026</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Core Tech</span>
+                <span class="meta-value">Python, Scikit-Learn, SHAP</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Deployment</span>
+                <span class="meta-value">FastAPI, Pydantic</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Links</span>
+                <span class="meta-value"><a href="https://github.com/Risk-Profiler/risk-profiler-backend" style="color:#00d2ff;">GitHub Repository</a></span>
+            </div>
+        </div>
+    </section>
+
+    <article class="project-content fade-in delay-1">
+        
+        <div class="text-block">
+            <h2>System Architecture & Modeling</h2>
+            <p>This project was developed to automate credit risk profiling for Micro, Small, and Medium Enterprises (MSMEs). I built a robust Python pipeline that handles data cleaning and custom financial feature engineering, specifically utilizing QRIS volume and utility delay ratios to capture nuanced financial behaviors.</p>
+            <p>To ensure high reliability, the core model utilizes a data leakage-free RandomForestClassifier. The training process incorporates SMOTE for class balancing within a StratifiedKFold validation setup, successfully achieving a generalization gap of less than 0.026.</p>
+        </div>
+
+        <div class="text-block">
+            <h2>Explainability & Deployment</h2>
+            <p>A major focus of this project was breaking the "black box" nature of machine learning. I integrated Explainable AI using the SHAP framework to auto-generate natural language risk explanations, providing loan officers with clear, actionable insights into why a specific risk profile was assigned.</p>
+            <p>Finally, the entire system was packaged and deployed as a production-ready REST API microservice utilizing FastAPI, with Pydantic handling strict schema validation for incoming data requests.</p>
+        </div>
+
+    </article>
+
+    <section class="next-project-section">
+        <p class="footer-label" style="text-align: center;">Next Project</p>
+        <a href="project-fraud-detection.html" class="next-project-link">Financial Fraud Detection ML <i class="fas fa-arrow-right"></i></a>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
